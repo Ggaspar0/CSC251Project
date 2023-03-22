@@ -141,9 +141,9 @@ public class Policy{
         return 600 + (age>50?75:0) + (smokeStatus.equals("smoker")?100:0) + (BMI>35?(BMI-35)*20:0);
             
         //base cost of the policy is $600
-        //if customer is over 50, an additional $75 is added to base
-        //if smoking status is "smoker", an additional $100 is added to base
-        //for each point of BMI over 35 points, additional money is added to the base, amount determined by pre-defined formula(BMI-35)*20
+        //if customer is over 50, an additional $75 is added to base, otherwise $0 is added
+        //if smoking status is "smoker", an additional $100 is added to base, otherwise $0 is added
+        //for each point of BMI over 35 points, additional amount of money is added to the base, amount determined by pre-defined formula(BMI-35)*20
         }
 
     }//end Policy class
