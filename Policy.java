@@ -130,13 +130,22 @@ public class Policy{
 
                                                                //Class Methods
 
-        //a method that accepts the policyholder's weight and height, calcultes the body mass index of the user, and returns the value   
+        /** method that accepts the policyholder's weight and height, calcultes the body mass index of the user, and returns the value 
+        *@param weight the policyholder's weight;
+        *@param height the policyholder's height;
+        *@return the calculated result of a pre-defined formula with the height and weight plugged in;  */
         public static double calculateBMI(double weight, double height){
             return (weight*703)/(height*height);//a pre-defined formula used to determine body mass index
         }
         
 
         //a method that accepts the policyholder's age, smoking status and their BMI, and returns a calculated policy price based on conditional parameters
+        /**
+        @param age the age of the policyholder
+        @param smokeStatus the smoking status of the policyholder
+        @param BMI the body mass index of the policyholder
+        @return the dollar amount of the policyholder's insurance based on age and smoking status, calculated with a pre-defined formula
+        */
         public static double calculatePrice(int age, String smokeStatus, double BMI){
         return 600 + (age>50?75:0) + (smokeStatus.equals("smoker")?100:0) + (BMI>35?(BMI-35)*20:0);
             

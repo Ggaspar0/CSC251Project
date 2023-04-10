@@ -45,7 +45,7 @@ public class Project_Gagik_Gasparyan {//class demonstrating attributes and behav
     Policy policy_1 = new Policy(policyNumber,providerName,holderFName,holderLName,holderAge,smokerStatus,holderHeight,holderWeight);
 
     //display all the information about policy_1, along with formatting
-    System.out.println("Policy Number: "+ policy_1.getPolicyNumber());
+    System.out.println("\nPolicy Number: "+ policy_1.getPolicyNumber());
     System.out.println("\nProvider Name: "+ policy_1.getProviderName());
     System.out.println("\nPolicyholder's First Name: "+ policy_1.getPolicyHolderFirstName());
     System.out.println("\nPolicyholder's Last Name: "+ policy_1.getPolicyHolderLastName());
